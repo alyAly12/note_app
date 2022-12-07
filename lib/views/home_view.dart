@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:note_app/component/custom_appbar.dart';
 import 'package:note_app/component/notes_list_view.dart';
 
@@ -18,6 +19,11 @@ static String id='homeView';
             Expanded(child: NotesListView())
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.teal,
+        onPressed: (){},
+      child: const Icon(FontAwesomeIcons.bars,color: Colors.white,),
       ),
     );
 

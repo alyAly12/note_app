@@ -3,14 +3,15 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class NoteItem extends StatelessWidget {
-  const NoteItem({Key? key}) : super(key: key);
+  final Color color;
+  const NoteItem({Key? key, required this.color}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: 24,bottom: 24,left: 16),
+      padding: const EdgeInsets.only(top: 24,bottom: 24,left: 16),
       decoration: BoxDecoration(
-        color: Colors.teal,
+        color:color,
             borderRadius: BorderRadius.circular(10)
       ),
       child: Column(
