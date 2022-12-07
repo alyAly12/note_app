@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:note_app/component/custom_app_bar.dart';
 
 
 class HomeView extends StatelessWidget {
@@ -6,6 +8,14 @@ class HomeView extends StatelessWidget {
 static String id='homeView';
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          SizedBox(height: 30,),
+          CustomAppBar()
+        ],
+      ),
+    );
+
   }
 }
