@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:note_app/component/custom_app_bar.dart';
+import 'package:note_app/component/custom_appbar.dart';
 
 
 class HomeView extends StatelessWidget {
