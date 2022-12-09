@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:note_app/component/add_note_sheet.dart';
 import 'package:note_app/component/custom_appbar.dart';
 import 'package:note_app/component/notes_list_view.dart';
 
@@ -15,14 +16,23 @@ static String id='homeView';
         child: Column(
           children: const [
             CustomAppBar(),
-            SizedBox(height: 15),
             Expanded(child: NotesListView())
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.teal,
-        onPressed: (){},
+        onPressed: (){
+          showModalBottomSheet(
+            shape:RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16)
+            ),
+              context: context,
+              builder: (context){
+                return const AddNoteBottomSheet();
+              }
+          );
+        },
       child: const Icon(FontAwesomeIcons.bars,color: Colors.white,),
       ),
     );
