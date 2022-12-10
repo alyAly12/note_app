@@ -14,9 +14,9 @@ static String id='homeView';
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 18.0,vertical: 40),
         child: Column(
-          children: const [
-            CustomAppBar(),
-            Expanded(child: NotesListView())
+          children:  [
+            CustomAppBar(title: 'Notes', icon: FontAwesomeIcons.magnifyingGlass, onTap: (){}),
+            const Expanded(child: NotesListView())
           ],
         ),
       ),
