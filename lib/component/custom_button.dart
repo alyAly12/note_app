@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 class CustomButton extends StatelessWidget {
    CustomButton({Key? key, required this.title, required this.onPress}) : super(key: key);
 final String title;
- VoidCallback? onPress;
+   void Function()? onPress;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
