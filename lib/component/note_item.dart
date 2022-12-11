@@ -4,8 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:note_app/views/edit_view.dart';
 
 class NoteItem extends StatelessWidget {
-  final Color color;
-  const NoteItem({Key? key, required this.color}) : super(key: key);
+
+  const NoteItem({Key? key,}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class NoteItem extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.only(top: 24,bottom: 24,left: 16),
         decoration: BoxDecoration(
-          color:color,
+          color:Colors.brown,
               borderRadius: BorderRadius.circular(10)
         ),
         child: Column(
